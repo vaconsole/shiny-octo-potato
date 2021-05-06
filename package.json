@@ -1,0 +1,17 @@
+{
+  "name": "httrack-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scape": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-stringify-safe": "^5.0.1",
+    "website-scraper": "^4.2.3",
+    "website-scraper-existing-directory": "^0.1.0"
+  }
+}
