@@ -16,7 +16,7 @@ const options = {
     }
   },
   recursive: true,
-  maxRecursiveDepth: 10,
+  maxRecursiveDepth: 3,
   filenameGenerator: 'bySiteStructure',
   directory: './site',
   ignoreErrors : true,
@@ -24,7 +24,8 @@ const options = {
 }
 
 // with async/await
-scrape(options).then((result) => {fs.writeFileSync('./site/index.json',stringify(result))
+scrape(options).then((result) => {
+// fs.writeFileSync('./site/index.json',stringify(result))
 console.log('index json exported')
 })
 

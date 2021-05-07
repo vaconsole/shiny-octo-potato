@@ -8,7 +8,7 @@ const inputUrlExtension = get_extension(url.parse(inputUrl).pathname) || '.html'
 const extCheck = type.includes(inputUrlExtension)
 // const sameDomainCheck = inputUrl.indexOf(targetUrl) === 0
 if (sameDomain) {
-  console.log(inputUrl,extCheck && sameDomainCheck)
+  console.log(`${inputUrl},${extCheck && sameDomainCheck}`)
   return extCheck && sameDomainCheck
 }
 return extCheck
