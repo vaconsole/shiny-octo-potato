@@ -20,6 +20,7 @@ const options = {
   filenameGenerator: 'bySiteStructure',
   directory: './site',
   ignoreErrors : true,
+  requestConcurrency : 8,
   plugins: [ new SaveToExistingDirectoryPlugin() ]
 }
 
