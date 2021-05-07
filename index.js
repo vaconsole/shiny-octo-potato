@@ -5,7 +5,7 @@ const SaveToExistingDirectoryPlugin = require('website-scraper-existing-director
 const {urlTypeFilter} = require('./util')
 
 
-const targetUrl = 'https://bbu.hk/'
+const targetUrl = 'https://www.succulentsandsunshine.com/'
 
 const options = {
   urls: [targetUrl],
