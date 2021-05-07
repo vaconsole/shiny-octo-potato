@@ -20,13 +20,13 @@ const options = {
   filenameGenerator: 'bySiteStructure',
   directory: './site',
   ignoreErrors : true,
-  requestConcurrency : 8,
+  requestConcurrency : 5,
   plugins: [ new SaveToExistingDirectoryPlugin() ]
 }
 
 // with async/await
 scrape(options).then((result) => {
-// fs.writeFileSync('./site/index.json',stringify(result))
+fs.writeFileSync('./site/index.json',stringify(result))
 console.log('index json exported')
 })
 
