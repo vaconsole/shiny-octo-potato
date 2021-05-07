@@ -3,7 +3,7 @@ const url = require('url')
 
 function urlTypeFilter (inputUrl, targetUrl="https://google.com",{type =[".html",".xml",".htm"], sameDomain=true}={}) {
 
-const sameDomainCheck = url.parse(inputUrl).hostname === url.parse(targetUrl).hostname
+const sameDomainCheck = inputUrl.indexOf(targetUrl) === 0
 const inputUrlExtension = get_extension(url.parse(inputUrl).pathname) || '.html'
 const extCheck = type.includes(inputUrlExtension)
 // const sameDomainCheck = inputUrl.indexOf(targetUrl) === 0
