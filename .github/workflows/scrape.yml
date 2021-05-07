@@ -10,7 +10,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: test runs-on
-        run: npm run scape
+        run: npm run scape >> ./run.log
       - name: Commit and push if it changed
         run: |-
           git config user.name "Automated"
