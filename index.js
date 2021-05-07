@@ -26,7 +26,7 @@ const options = {
 
 // with async/await
 scrape(options).then((result) => {
-fs.writeFileSync('./site/index.json',stringify(result))
+// fs.writeFileSync('./site/index.json',stringify(result))
 console.log('index json exported')
 })
 
